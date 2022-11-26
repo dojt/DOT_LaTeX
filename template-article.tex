@@ -1,0 +1,150 @@
+\documentclass[a4paper,10pt,twoside,reqno,nonamelimits]{article}
+\usepackage{a4wide}
+%\usepackage[pagebackref,colorlinks=true,urlcolor=blue,linkcolor=blue,citecolor=blue]{hyperref}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue,citecolor=blue]{hyperref}
+%\usepackage[colorlinks=false]{hyperref}
+%\usepackage[top=1.65in,bottom=1.7in,left=1.5in,right=1.5in]{geometry}
+%% \usepackage{makeidx}
+%%\usepackage{theorem}
+%%\usepackage{array}
+
+%\usepackage{mathptmx}        % PSNFSS
+%\usepackage{bookman}         % PSNFSS (wide!)
+\usepackage{newcent}         % PSNFSS
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amscd}
+\usepackage{amsthm}
+\usepackage{amsxtra}
+%\usepackage{stmaryrd}
+%\usepackage{mathabx}
+%\usepackage{eucal}
+\usepackage{mathrsfs}
+\usepackage{nicefrac}
+%\usepackage{bbold}
+%%\usepackage{bm}
+\usepackage{graphicx}%\graphicspath{ {image/} }
+\usepackage{xcolor}
+% \usepackage[raggedright,IT,hang]{subfigure}
+%\usepackage{url}
+\usepackage{tikz}
+%\usepackage{wrapfig}
+\usepackage{enumitem}
+\setlist[enumerate]{leftmargin=2em,itemindent=0em, labelindent=0pt,labelwidth=1.5em,labelsep=.5em, align=left, noitemsep}
+\newlist{condenum}{enumerate}{1}
+\setlist[condenum]{ leftmargin=4em,itemindent=0em, labelindent=0pt,labelwidth=1.5em,labelsep=.5em, align=left, noitemsep}
+\newlist{txtenum}{enumerate}{1}
+\setlist[txtenum]{leftmargin=0em,itemindent=1.5em, labelindent=0pt,labelwidth=1em,labelsep=.5em, align=left}
+% \begin{enumerate}[resume,label=(\alph*)]...
+% \begin{enumerate}[label=\arabic*., leftmargin=1em,itemindent=.5em, labelindent=0pt,labelwidth=1em,labelsep=.5em, align=left]
+% * H spacing: leftmargin+itemindent = labelindent+labelwidth+labelsep
+% * Sub-numbers: just take ``label*'' instead of ``label''
+
+%\usepackage[norelsize,boxed,noend,linesnumbered]{algorithm2e}\DontPrintSemicolon
+%\SetKwFor{RepeatTimes}{repeat}{times}{endrepeat}
+%\RestyleAlgo{ruled}
+% 'norelsize' takes care of incompatibility with amsart in old version of algorithm2e.
+%             Remove it once the new version is on the system
+% \begin{algorithm}[htbp OR H]
+% Commands: \TitleOfAlgo{}   \SetKwInOut{Input}{Input}\SetKwInOut{Output}{Returns}
+% \For{}{} \Foreach{}{} \If{}{} \eIf{}{}{} \EsleIf{}{} \While{}{} \Return{}
+
+\usepackage{datetime}
+
+\input{defsN.amsart}
+\input{defs.common}
+%\input{algodefs}
+
+\newcounter{mysaveenumi}
+% U S A G E :
+% \setcounter{mysaveenumi}{\theenumi}
+% \begin{enumerate}[(a)]\setcounter{enumi}{\themysaveenumi}
+%   ...
+
+%\newtheorem{fact}[theorem]{Fact}
+% \numberwithin{theorem}{section}
+
+% \renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+
+% \newcommand{\myparagraph}[1]{\mypar #1}
+% \newcommand{\myparagraphwskip}[1]{\smallskip\paragraph{#1}}
+% \newcommand{\claimpf}[1]{\myparagraph{\textit{#1}}}
+% %
+\newcommand{\mypar}{\par\medskip\noindent}
+\newcommand{\myparbig}{\par\bigskip\noindent}
+
+% BEGIN comment / uncomment
+\newcommand{\todo}[1][ToDo]{{\tiny\color{red}$\scriptscriptstyle\circ$}{\marginpar{\centering\tiny\sf$\color{red}\bullet$\color{red}#1}}}
+\newcommand{\TODO}[1][Yikes!]{{\tiny\color{red}$\scriptscriptstyle\circ$}{\marginpar{\centering\tiny\sf$\color{red}\bullet$\color{red}#1}}}
+\newcommand{\TODOtxt}[1]{\textbf{\color{red}#1\tiny$\scriptscriptstyle\circ${\marginpar{\centering\tiny\sf$\color{red}\bullet$\color{red}Yikes!}}}}
+\newcommand{\TODOpar}[1]{\par\begin{center}\textbf{\color{red}#1\tiny$\scriptscriptstyle\circ${\marginpar{\centering\tiny\sf$\color{red}\bullet$\color{red}Yikes!}}}\end{center}}
+\newcommand{\status}[1]{ {\sf\color{red}$[$#1$]$}}
+% \newcommand{\todo}[1]{}
+% \newcommand{\TODO}[1]{\Yikes}
+% \newcommand{\TODOtxt}[1]{\Yikes}
+% \newcommand{\TODOpar}[1]{\Yikes}
+% \newcommand{\status}[1]{}
+% END comment / uncomment
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% M A C R O S   macros
+%
+%
+%
+%
+
+%\renewcommand{\baselinestretch}{1.5}
+\begin{document}
+\title{Title of the article}
+\author{Dirk Oliver Theis$^{a,b}$
+\\[1ex]
+  \small $^a$ Theoretical Computer Science, University of Tartu, Estonia\\
+  \small $^b$ Ketita Labs {\tiny O\"U}, Tartu, Estonia\\
+  \small \texttt{dotheis@ut.ee}, \texttt{dotheis@ketita.com}}%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%
+%%
+\date{Version: Sun Mar 14 13:22:04 EET 2021
+  \\
+  Compiled: \currenttime}
+%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% arXiv abstract:
+%
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+  Blah.
+  \par\medskip%
+  \textbf{Keywords:} Blah.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+\section*{Acknowledgements}
+This research was supported by ..............................................
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{plain}
+\bibliography{dirks}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\section*{APPENDIX}
+\section{Blah}
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% fill-column: 98
+%%% End:

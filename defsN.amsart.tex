@@ -1,0 +1,98 @@
+% tex/defs.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{proposition*}{Proposition}
+
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem*{corollary*}{Corollary}
+
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem*{observation*}{Observation}
+
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem*{remark*}{Remark}
+\newtheorem{remarks}[theorem]{Remarks}
+\newtheorem*{remarks*}{Remarks}
+
+%\numberwithin{equation}{section}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{definition*}{Definition}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem*{notation*}{Notation}
+\newtheorem{example}[theorem]{Example}
+\newtheorem*{example*}{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem*{exercise*}{Exercise}
+
+\newtheorem{fact}[theorem]{Fact}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{remark}
+%\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem*{claim*}{Claim}
+
+\newtheorem*{conjecture*}{Conjecture}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\newtheorem*{question*}{Question}
+\newtheorem{question}[theorem]{Question}
+\newtheorem*{questions*}{Questions}
+\newtheorem{questions}[theorem]{Questions}
+
+\newtheorem*{problem*}{Problem}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem*{problems*}{Problems}
+\newtheorem{problems}[theorem]{Problems}
+
+\newtheorem*{openproblem*}{Open Problem}
+\newtheorem{openproblem}[theorem]{Open Problem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\extraqed}{}
+\newcommand{\authorstwo}[4]{\author[#1 and #3]{#1\\#2\\and\\#3\\#4}}
+\newcommand{\titlewsub}[2]{\title[#1]{#1: #2}}
+\newcommand{\subclass}[1]{}
+
+
+\newenvironment{rems}{\begin{remsTh}~\\[-\baselineskip]
+\begin{enumerate}\enumTi{\arabic{enumi}.}}
+{\end{enumerate}\end{remsTh}}
+
+\DeclareMathOperator{\grad}{grad}
+
+
+\newcommand{\enumTi}[1]{\renewcommand{\theenumi}{#1}}
+\newcommand{\enumTii}[1]{\renewcommand{\theenumii}{#1}}
+\newcommand{\enumTiii}[1]{\renewcommand{\theenumiii}{#1}}
+\newcommand{\enumTiv}[1]{\renewcommand{\theenumiv}{#1}}
+
+\newcommand{\alphenumi}{\enumTi{\alph{enumi}}}
+\newcommand{\Alphenumi}{\enumTi{\Alph{enumi}}}
+\newcommand{\romenumi}{\enumTi{\roman{enumi}}}
+\newcommand{\itromenumi}{\enumTi{\textit{\roman{enumi}}}}
+\newenvironment{aenumeratei}{%
+  \begin{enumerate}\alphenumi}{%
+  \end{enumerate}}
+\newenvironment{renumeratei}{%
+  \begin{enumerate}\romenumi}{%
+  \end{enumerate}}
+
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "nil"
+%%% End: 

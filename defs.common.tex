@@ -1,0 +1,460 @@
+% defs.common.tex
+
+\newcommand{\from}{\leftarrow}
+\newcommand{\downto}{\searrow}
+\newcommand{\upto}{\nearrow}
+\newcommand{\aand}{\mathrel\&}
+
+\newcommand{\Frowney}{${{}_{.\,.}}\above0pt{}^{\frown}$}
+\newcommand{\Smiley}{{\ensuremath{{{}_{.\,.}}\above0pt{}^{\smile}}}}
+
+\newlength{\hspaceforlengthglumpf}
+\newcommand{\hsfor}[1]{\settowidth{\hspaceforlengthglumpf}{#1}\hspace{\hspaceforlengthglumpf}}
+\newcommand{\hsforminus}[1]{\settowidth{\hspaceforlengthglumpf}{#1}\hspace{-\hspaceforlengthglumpf}}
+
+\newcommand{\onespace}{\mspace{1mu}}
+
+
+\newcommand{\stepnr}[1]{{\footnotesize #1}}
+
+\newcommand{\stbox}[2]{\text{\tiny\parbox{#1}{\centering\baselineskip=0.5 \baselineskip #2}}}
+
+\newcommand{\ubtxt}[3]{\underbrace{#1}_{\stbox{#2}{#3}}}
+\newcommand{\obtxt}[3]{\overbrace{#1}^{\stbox{#2}{#3}}}
+\newcommand{\utxt}[3]{\mathop{#1}\limits_{\stbox{#2}{#3}}}
+
+\renewcommand{\em}{\sl}
+
+\newcommand{\cmmt}[1]{\text{\footnotesize[#1]}}
+
+% continuous numberin in enumis
+\newcommand{\prepareEnumiSave}[1]{\newcounter{myenumiaidsyfgusiwuebfoauishdf#1}}
+\newcommand{\saveEnumi}[1]{\setcounter{myenumiaidsyfgusiwuebfoauishdf#1}{\value{enumi}}}
+\newcommand{\restoreEnumi}[1]{\setcounter{enumi}{\value{myenumiaidsyfgusiwuebfoauishdf#1}}}
+
+%\newcommand{\case}[1]{\par\smallskip\noindent\textit{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% math relations & Operators
+
+\newcommand{\approxcmmt}[1]{\mathrel{\mathop\approx\limits_{\stbox{1.5cm}{#1}}}}
+\newcommand{\eqcmmt}[1]{\mathrel{\mathop=\limits_{\stbox{1.5cm}{#1}}}}
+\newcommand{\lecmmt}[1]{\mathrel{\mathop\le\limits_{\stbox{1.5cm}{#1}}}}
+\newcommand{\gecmmt}[1]{\mathrel{\mathop\ge\limits_{\stbox{1.5cm}{#1}}}}
+\newcommand{\eqcomment}[2]{\mathrel{\mathop=\limits_{\stbox{#1}{#2}}}}
+\newcommand{\eqshrtcmmt}[1]{\mathrel{\mathop=\limits_{#1}}}
+
+\newcommand{\eqcmt}[1]{\mathrel{\mathop=\limits_{#1}}}
+\newcommand{\lecmt}[1]{\mathrel{\mathop\le\limits_{#1}}}
+\newcommand{\gecmt}[1]{\mathrel{\mathop\ge\limits_{#1}}}
+\newcommand{\lesssimcmt}[1]{\mathrel{\mathop\lesssim\limits_{#1}}}
+\newcommand{\gtrsimcmt}[1]{\mathrel{\mathop\gtrsim\limits_{#1}}}
+
+\newcommand{\musteq}{\stackrel{!}{=}}
+\newcommand{\mustleq}{\stackrel{!}{\le}}
+\newcommand{\questioneq}{\stackrel{?}{=}}
+
+
+\newcommand{\then}{\mathrel{\mathop{\;\Rightarrow\;}}}
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\onto}{\twoheadrightarrow}
+\newcommand{\leply}{\mathrel{\le_p}}
+
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\divg}{div}
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\defect}{def}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\vrt}{vert}
+\DeclareMathOperator{\argmax}{argmax}
+\DeclareMathOperator{\argmin}{argmin}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\polylog}{polylog}
+\DeclareMathOperator{\lnln}{lnln}
+\DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\rk}{rk}
+\DeclareMathOperator{\vol}{vol}
+
+\renewcommand{\div}{\divg}
+\newcommand{\Id}{\mathrm{Id}}
+
+%% Matricess / Operators
+\DeclareMathOperator{\Diag}{Diag}
+
+% Sets
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\Relint}{Relint}
+\DeclareMathOperator{\Img}{Img}
+\DeclareMathOperator{\Ker}{Ker}
+
+\DeclareMathOperator{\Lin}{Lin}
+\DeclareMathOperator{\Spn}{Span}
+\DeclareMathOperator{\Aff}{Aff}
+\DeclareMathOperator{\Cvxhull}{Cvxhull}
+\DeclareMathOperator{\Cvxcone}{Cvxcone}
+
+%\DeclareMathOperator{\Real}{Re}
+%\DeclareMathOperator{\Imag}{Im}
+
+\newcommand{\orth}{\bot}
+
+\newcommand{\One}{\mathbf{1}}
+\newcommand{\Zero}{\mathbf{0}}
+%\newcommand{\place}{{\text{\footnotesize$\oblong$}}}
+
+\newcommand{\ONE}{\mathbb{1}}
+
+\newcommand{\lt}{\left}
+\newcommand{\rt}{\right}
+\newcommand{\lft}{\bigl}
+\newcommand{\rgt}{\bigr}
+\newcommand{\Lft}{\Bigl}
+\newcommand{\Rgt}{\Bigr}
+
+\newcommand{\T}{{\mspace{-1mu}\scriptscriptstyle\top\mspace{-1mu}}}
+\newcommand{\polar}{\vartriangle}
+\newcommand{\poOps}{\Diamond}
+\newcommand{\blOps}{\sharp}
+
+\newcommand{\lmit}{\;\;\vrule\;\;}
+\newcommand{\Mit}{\;\;\vrule\;\;}
+
+
+\newcommand{\mIt}[1]{{\mathit{#1}}}
+
+% \newcommand{\Mod}{\!\big/\!}
+% \newcommand{\MOd}{\!\Big/\!}
+
+%%\newcommand{\cupdj}{\stackrel{.}{\cup}}
+%\DeclareMathOperator*{\bigcupdj}{{\bigcup\kern-1.7ex {}^.}\,}
+%\newlength{\DOTwidthofabigcup}
+%\DeclareMathOperator*{\bigcupdj}{{\settowidth{\DOTwidthofabigcup}{\bigcup}{\bigcup\kern-\DOTwidthofabigcup/2{}^.}}}
+%\newcommand{\bigcupdj}{{\bigcup^.}\limits}
+
+\newcommand{\dotcup}{\mathbin{\dot\cup}}
+
+\renewcommand{\Hat}{\wedge}
+
+\newcommand{\comma}{\text{, }}
+\newcommand{\Order}{O}
+\newcommand{\OrderEq}{\ensuremath{\Theta}}
+
+\newcommand{\modu}[2]{%
+{{}^{\textstyle #1}\!\!\Big/\!\!{}_{\textstyle #2}}}
+\newcommand{\restr}[2]{\lt.{#1}\vrule{}_{#2}\rt.}
+\newcommand{\vrstr}[2]{\restr{#1}{#2}}
+\newcommand{\sstack}[1]{{\substack{#1}}}
+\newcommand{\sstck}[1]{{\substack{#1}}}
+
+\newcommand{\close}[1]{\overline{#1}}
+\newcommand{\cj}[1]{\overline{#1}}
+%\newcommand{\widebar}[1]{\overline{#1}}
+\newcommand{\widevec}[1]{\overrightarrow{#1}}
+
+\DeclareMathOperator{\pr}{pr}
+
+\newcommand{\dann}{\Rightarrow}
+\newcommand{\pii}{{\pi i}}
+
+\newcommand{\edzpii}{{\frac{1}{2\pii}}}
+\newcommand{\nfrac}[2]{{\nicefrac{#1}{#2}}}
+
+\newcommand{\cplmt}{\complement}
+
+\newcommand{\symdiff}{{\vartriangle}}
+
+\newcommand{\AAa}{\mathbb{A}}
+\newcommand{\BB}{\mathbb{B}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\DD}{\mathbb{D}}
+\newcommand{\EE}{\mathbb{E}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\HH}{\mathbb{H}}
+\newcommand{\KK}{\mathbb{K}}
+\newcommand{\LL}{\mathbb{L}}
+\newcommand{\MM}{\mathbb{M}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\Ss}{\mathbb{S}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\UU}{\mathbb{U}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\kk}{\mathbb{k}}
+
+\newcommand{\CCpkt}{\C^{\bullet}}
+
+\newcommand{\SPH}{\mathbb{S}}
+\newcommand{\PR}{\mathbb{PR}}
+\newcommand{\PC}{\mathbb{PC}}
+
+\newcommand{\DDelta}{\mathbb{\Delta}}
+\newcommand{\Spx}{\mathbb{\Delta}}
+
+%% E x p e c t a t i o n
+
+\DeclareMathOperator{\bbbExp}{\EE}
+\newcommand{\bbblExp}{\bbbExp\displaylimits}
+\DeclareMathOperator{\bbbEXp}{\text{\Large$\EE$}}
+\newcommand{\bbblEXpo}{\bbbEXp\displaylimits}
+\newcommand{\bbblEXp}{\bbbEXp\displaylimits}
+\DeclareMathOperator{\bbbEXP}{\text{\huge$\EE$}}
+\newcommand{\bbblEXP}{\bbbEXP\displaylimits}
+
+\DeclareMathOperator{\expct}{\mathbf E}
+\DeclareMathOperator{\Expct}{\text{\large$\mathbf E$}}
+
+\DeclareMathOperator*{\Prb}{\mathbb{P}}
+\DeclareMathOperator*{\Exp}{\mathbb{E}}
+\DeclareMathOperator*{\HExp}{\text{\huge$\mathbb{E}$}}
+\DeclareMathOperator*{\LExp}{\text{\Large$\mathbb{E}$}}
+\DeclareMathOperator*{\lExp}{\text{\large$\mathbb{E}$}}
+\DeclareMathOperator*{\Var}{\mathbb{V}\mspace{-2mu}ar}
+\DeclareMathOperator*{\Covar}{\mathbb{Covar}}
+\DeclareMathOperator{\IndicatorOp}{\mathbf{1}}
+\newcommand{\Ind}{\IndicatorOp}
+\newcommand{\Cov}{\Covar}
+\newcommand{\I}[1]{\One_{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\Bd}{\mathcal B}
+
+\newcommand{\fB}{{ \mathfrak{B} }}
+\newcommand{\fA}{{ \mathfrak{A} }}
+\newcommand{\fT}{{ \mathfrak{T} }}
+\newcommand{\fS}{{ \mathfrak{S} }}
+\newcommand{\fE}{{ \mathfrak{E} }}
+
+\newcommand{\yps}{\upsilon}
+\newcommand{\Yps}{\Upsilon}
+\newcommand{\eps}{\varepsilon}
+
+\newcommand{\nMtx}[1]{{\begin{smallmatrix}#1\end{smallmatrix}}}
+\newcommand{\Mtx}[1]{{\bigl(\begin{smallmatrix}#1\end{smallmatrix}\bigr)}}
+\newcommand{\Mtxv}[1]{{\lt(\begin{smallmatrix}#1\end{smallmatrix}\rt)}}
+\newcommand{\bMtx}[1]{{\begin{pmatrix}#1\end{pmatrix}}}
+
+\newcommand{\mtt}[1]{{\text{\tt #1}}}
+\newcommand{\ID}{\Mtx{1&0\\0&1}}
+\newcommand{\bID}{\bMtx{1&0\\0&1}}
+\newcommand{\Mabcd}{\Mtx{a&b\\c&d}}
+\newcommand{\bMabcd}{\bMtx{a&b\\c&d}}
+
+\newcommand{\scp}[2]{{\lt.\lt( #1 \,\right| #2 \rt)}}
+\newcommand{\pNm}[2]{{\lt\lVert #1 \rt\rVert_{#2}}}
+
+\newcommand{\floor}[1]{\lfloor{#1}\rfloor}
+\newcommand{\ceil}[1]{\lceil{#1}\rceil}
+\newcommand{\Ceil}[1]{\lt\lceil{#1}\rt\rceil}
+\newcommand{\Floor}[1]{\lt\lfloor{#1}\rt\rfloor}
+
+\newcommand{\abs}[1]{{\lvert{#1}\rvert}}                        \newcommand{\Nm}[1]{{\lVert{#1}\rVert}}
+\newcommand{\Abs}[1]{{\lt\lvert{#1}\rt\rvert}}                  \newcommand{\NM}[1]{{\lt\lVert{#1}\rt\rVert}}
+\newcommand{\absb}[1]{{\bigl\lvert{#1}\bigr\rvert}}             \newcommand{\Nmb}[1]{{\bigl\lVert{#1}\bigr\rVert}}
+\newcommand{\absB}[1]{{\Bigl\lvert{#1}\Bigr\rvert}}             \newcommand{\NmB}[1]{{\Bigl\lVert{#1}\Bigr\rVert}}
+\newcommand{\absbg}[1]{{\biggl\lvert{#1}\biggr\rvert}}          \newcommand{\Nmbg}[1]{{\biggl\lVert{#1}\bigbr\rVert}}
+\newcommand{\absBg}[1]{{\Biggl\lvert{#1}\Biggr\rvert}}          \newcommand{\NmBg}[1]{{\Biggl\lVert{#1}\Bigbr\rVert}}
+
+\newcommand{\cip}[2]{({#1}\mid{#2})}
+\newcommand{\cipb}[2]{\big({#1}\bigm|{#2}\big)}
+\newcommand{\cipB}[2]{\Big({#1}\Bigm|{#2}\Big)}
+\newcommand{\cipbg}[2]{\bigg({#1}\biggm|{#2}\bigg)}
+\newcommand{\cipBg}[2]{\Bigg({#1}\Biggm|{#2}\Bigg)}
+
+\newcommand{\rip}[2]{\langle{#1} \,,\, {#2}\rangle}
+\newcommand{\ripb}[2]{\big\langle{#1} \,,\, {#2}\big\rangle}
+\newcommand{\ripB}[2]{\Big\langle{#1} \,,\, {#2}\Big\rangle}
+\newcommand{\ripbg}[2]{\bigg\langle{#1}\;,\;{#2}\bigg\rangle}
+\newcommand{\ripBg}[2]{\Bigg\langle{#1}\;,\;{#2}\Bigg\rangle}
+
+\newcommand{\dual}[2]{\langle{#1}:{#2}\rangle}
+\newcommand{\dualb}[2]{\big\langle{#1}:{#2}\big\rangle}
+\newcommand{\dualB}[2]{\Big\langle{#1}:{#2}\Big\rangle}
+\newcommand{\dualbg}[2]{\bigg\langle{#1}\;:\;{#2}\bigg\rangle}
+\newcommand{\dualBg}[2]{\Bigg\langle{#1}\;:\;{#2}\Bigg\rangle}
+
+\newcommand{\braket}[2]{{\lt< #1 \mid #2 \rt>}}
+\newcommand{\ketbra}[2]{{\lvert #1 \rangle\langle #2 \rvert}}
+\newcommand{\bra}[1]{{\langle #1 \rvert}}
+\newcommand{\ket}[1]{{\lvert  #1 \rangle}}
+\newcommand{\BRA}[1]{{\lt\langle #1 \rt\rvert}}
+\newcommand{\KET}[1]{{\lt\lvert  #1 \rt\rangle}}
+\newcommand{\brab}[1]{{\bigl\langle #1 \bigr\rvert}}
+\newcommand{\ketb}[1]{{\bigl\lvert  #1 \bigr\rangle}}
+\newcommand{\braB}[1]{{\Bigl\langle #1 \Bigr\rvert}}
+\newcommand{\ketB}[1]{{\Bigl\lvert  #1 \Bigr\rangle}}
+\newcommand{\brabg}[1]{{\biggl\langle #1 \biggr\rvert}}
+\newcommand{\ketbg}[1]{{\biggl\lvert  #1 \biggr\rangle}}
+\newcommand{\braBg}[1]{{\Biggl\langle #1 \Biggr\rvert}}
+\newcommand{\ketBg}[1]{{\Biggl\lvert  #1 \Biggr\rangle}}
+\newcommand{\rsp}[2]{\lt<#1\,,\, #2 \rt>}
+
+\newcommand{\iprod}{\bullet}
+\newcommand{\ip}[1]{\lt(#1\rt)}
+\newcommand{\ipn}[1]{(#1)}
+\newcommand{\ipb}[1]{\bigl(#1\bigr)}
+\newcommand{\ipB}[1]{\Bigl(#1\Bigr)}
+\newcommand{\ipbg}[1]{\biggl(#1\biggr)}
+\newcommand{\ipBg}[1]{\Biggl(#1\Biggr)}
+
+
+
+%\definecolor{purp}{named}{Purple}
+\newcommand{\xyATabular}[5]{
+\vspace{0.1cm}
+\begin{tabular}{l@{}l}
+   & \fcolorbox{black}{#1}{\parbox[c][0.3cm]{1.1cm}{\centering #2}} \\
+\fcolorbox{black}{#3}{\parbox[c][1.1cm]{0.3cm}{#4}} &
+        \fbox{\parbox[c][1.1cm]{1.1cm}{\centering #5}}
+\end{tabular}
+\vspace{0.1cm}
+}
+\newcommand{\rlstopline}[9]{
+\begin{picture}(#1,#3)(0,-#2)
+        \put(0,0){\line(1,0){#1}}
+        \put(0,0){\line(0,1){#2}}
+        \put(0,0){\line(0,-1){#2}}
+        \put(#1,0){\line(0,1){#2}}
+        \put(#1,0){\line(0,-1){#2}}
+        \put(#4,#5){#6}
+        \put(#7,#8){#9}
+\end{picture}
+}
+\newcommand{\tridipicture}[2]{
+\unitlength=#1
+\begin{picture}(5,5)(0,0)
+\put(0,5){\line(1,-1){5}}
+\put(1,5){\line(1,-1){4}}
+\put(0,4){\line(1,-1){4}}
+#2
+\end{picture}
+}
+
+\newcommand{\Kone}{\ding{"0C0}}
+\newcommand{\Ktwo}{\ding{"0C1}}
+\newcommand{\Kthree}{\ding{"0C2}}
+\newcommand{\Kfour}{\ding{"0C3}}
+\newcommand{\Kfive}{\ding{"04C}}
+\newcommand{\Ksix}{\ding{"05C}}
+\newcommand{\Kseven}{\ding{"60C}}
+\newcommand{\Keight}{\ding{"0C7}}
+\newcommand{\Knine}{\ding{"0C8}}
+\newcommand{\Kzero}{\ding{"0CA}}
+
+
+% Damit nach Abkuerzungen nicht derselbe Abstand wie nach einer
+% Satzendeinterpunktion erfolgt, wird xspace eingesetzt.
+% Die verwendeten Abkuerzungen werden hier der Einfachheit halber
+% definiert:
+%\newcommand{\Nr}{Nr.}
+
+\newlength{\algotabbingwidth}
+\setlength{\algotabbingwidth}{1cm}
+\newenvironment{algo}{%
+  \begin{tabbing}
+    \hspace*{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \kill\\
+    }{%
+  \end{tabbing}%
+}
+\newenvironment{algoShort}{%
+  \begin{tabbing}
+    \hspace*{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \hspace{\algotabbingwidth}\=%
+    \kill
+    }{%
+  \end{tabbing}%
+}
+%% \newlength{\algoboxwidth}%
+%% \newlength{\algolabelwidth}%
+%% \newcommand{\algbox}[3]{%
+%%   \settowidth{\algolabelwidth}{#1~}%
+%%   \setlength{\algoboxwidth}{-\algolabelwidth}%
+%%   \addtolength{\algoboxwidth}{-#2cm}%
+%%   \addtolength{\algoboxwidth}{\textwidth}%
+%%   #1~\parbox[t]{\algoboxwidth}{\raggedright #3\vspace{1mm}
+%%     }%
+%% }
+
+\newcommand{\STOP}[0]{{STOP}}
+
+\newcommand{\var}[1]{{\ensuremath{\text{\textit{#1}}}}}
+
+\newenvironment{code}[1]{\begin{tabbing}
+\hspace*{6mm}\=\hspace{6mm}\=\hspace{6mm}\=\hspace{6mm}\=\hspace{6mm}\=\hspace{6mm}\=\hspace{6mm}\=\hspace{6mm}\=\hspace{6mm}\=\hspace{6mm}\=\hspace{6mm}\=\hspace{6mm}\=\hspace{6mm}\=
+\kill {{\tt Algorithm} {#1}}\\ \{\+ \\}{\-\\ \} \end{tabbing}}
+
+\newenvironment{codeseg}{\begin{tabbing}
+\hspace*{1em}\=\hspace{1em}\=\hspace{1em}\=\hspace{1em}\=\hspace{1em}\=\hspace{1em}\=\hspace{1em}\=\hspace{1em}\=\hspace{1em}\=\hspace{1em}\=\hspace{1em}\=\hspace{1em}\=\hspace{1em}\=
+\kill }{\end{tabbing}}
+
+\newenvironment{mylist}{%
+  \begin{list}{}{%
+      \renewcommand{\makelabel}[1]{%
+        \hspace{\parindent}{\em{##1}}\quad}%
+      \setlength{\parsep}{0mm}%
+      \setlength{\labelsep}{0mm}%
+      \setlength{\leftmargin}{0mm}%
+      \setlength{\listparindent}{\parindent}}%
+}{\end{list}}%
+\newenvironment{txtlist}{%
+  \begin{list}{}{%
+      \renewcommand{\makelabel}[1]{%
+%       \hspace{\parindent}%
+        {\em{##1}}\quad%
+      }
+%      \setlength{\parsep}{0mm}%
+%      \setlength{\labelsep}{0mm}%
+%      \setlength{\leftmargin}{0mm}%
+%      \setlength{\listparindent}{\parindent}%
+}%
+}{\end{list}}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newcommand{\eqm}{\equiv}
+\newcommand{\eqm}{=}
+%% \renewcommand{\subset}{\subseteq}
+%% \renewcommand{\supset}{\supseteq}
+% \newcommand{\Pz}[1]{P_{#1}}
+% \newcommand{\Pb}[1]{P^{\scriptscriptstyle 0/1}_{#1}}
+% \newcommand{\Pm}[1]{P_{#1}}
+% \newcommand{\Pse}[1]{P^{\text{se}}_{#1}}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "nil"
+%%% End: 
