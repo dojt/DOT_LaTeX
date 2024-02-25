@@ -1,0 +1,4 @@
+#+LaTeX_HEADER: \newunicodechar{𝜃}{\ensuremath{\theta}}
+#+LaTeX_HEADER: \newunicodechar{𝑥}{\ensuremath{x}}
+#+LaTeX_HEADER: \newunicodechar{𝒙}{\ensuremath{\boldsymbol{x}}}
+#+LaTeX_HEADER: \newunicodechar{𝐠}{\ensuremath{\boldsymbol{g}}}
