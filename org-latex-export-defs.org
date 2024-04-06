@@ -1,4 +1,62 @@
-#+LaTeX_HEADER: \newunicodechar{𝜃}{\ensuremath{\theta}}
+#+LaTeX_HEADER: %% Latin math letters
+
+#+LaTeX_HEADER: \newunicodechar{𝑓}{\ensuremath{f}}              % MATHEMATICAL                 ITALIC SMALL _
+
+#+LaTeX_HEADER: \newunicodechar{𝑔}{\ensuremath{g}}              % MATHEMATICAL                 ITALIC SMALL _
+#+LaTeX_HEADER: \newunicodechar{𝒈}{\ensuremath{\boldsymbol{g}}} % MATHEMATICAL            BOLD ITALIC SMALL _
+#+LaTeX_HEADER: \newunicodechar{𝗴}{\ensuremath{\mathbf{g}}}     % MATHEMATICAL SANS-SERIF BOLD        SMALL _
+
 #+LaTeX_HEADER: \newunicodechar{𝑥}{\ensuremath{x}}
 #+LaTeX_HEADER: \newunicodechar{𝒙}{\ensuremath{\boldsymbol{x}}}
-#+LaTeX_HEADER: \newunicodechar{𝐠}{\ensuremath{\boldsymbol{g}}}
+
+#+LaTeX_HEADER: \newunicodechar{𝑦}{\ensuremath{y}}
+#+LaTeX_HEADER: \newunicodechar{𝒚}{\ensuremath{\boldsymbol{y}}}
+
+
+#+LaTeX_HEADER: %% Greek letters
+#+LaTeX_HEADER: \newunicodechar{𝛼}{\ensuremath{\alpha}}          % MATHEMATICAL ITALIC SMALL ...
+#+LaTeX_HEADER: \newunicodechar{𝛽}{\ensuremath{\beta}}
+#+LaTeX_HEADER: \newunicodechar{𝜀}{\ensuremath{\varepsilon}}
+#+LaTeX_HEADER: \newunicodechar{𝜃}{\ensuremath{\theta}}
+#+LaTeX_HEADER: \newunicodechar{𝜎}{\ensuremath{\sigma}}
+
+#+LaTeX_HEADER: \newunicodechar{𝝅}{\ensuremath{\boldsymbol\pi}} % MATHEMATICAL BOLD ITALIC SMALL ...
+
+
+#+LaTeX_HEADER: %% Other letters
+#+LaTeX_HEADER: \newunicodechar{𝓁}{\ensuremath{\ell}} % MATHEMATICAL SCRIPT SMALL L
+#+LaTeX_HEADER: \newunicodechar{𝕽}{\ensuremath{\mathfrak{R}}} % MATHEMATICAL BOLD FRAKTUR CAPITAL R
+
+
+#+LaTeX_HEADER: %% Superscripts
+
+#+LaTeX_HEADER: \newunicodechar{²}{\ensuremath{{}^2}}
+
+#+LaTeX_HEADER: \newunicodechar{ᵘ}{\ensuremath{{}^{\mathsf{u}}}} % MODIFIER LETTER SMALL U
+
+
+#+LaTeX_HEADER: %% Subscripts
+
+#+LaTeX_HEADER: \newunicodechar{₀}{\ensuremath{{}_0}}
+#+LaTeX_HEADER: \newunicodechar{₁}{\ensuremath{{}_1}}
+#+LaTeX_HEADER: \newunicodechar{₂}{\ensuremath{{}_2}}
+
+#+LaTeX_HEADER: \newunicodechar{ⱼ}{\ensuremath{{}_j}} % LATIN SUBSCRIPT SMALL LETTER J
+
+
+#+LaTeX_HEADER: %% BBB
+
+#+LaTeX_HEADER: \newunicodechar{𝕂}{\ensuremath{\mathbb{K}}} % MATHEMATICAL DOUBLE-STRUCK CAPITAL K
+#+LaTeX_HEADER: \newunicodechar{ℝ}{\ensuremath{\mathbb{R}}}
+
+
+#+LaTeX_HEADER: %% Miscshit
+
+#+LaTeX_HEADER: \newunicodechar{₍}{\ensuremath{_{(}}} % SUBSCRIPT LEFT PARENTHESIS
+#+LaTeX_HEADER: \newunicodechar{₎}{\ensuremath{_{)}}} % SUBSCRIPT RIGHT PARENTHESIS
+
+#+LaTeX_HEADER: \newunicodechar{∥}{\ensuremath{\Vert}}  % PARALLEL TO
+#+LaTeX_HEADER: \newunicodechar{∇}{\ensuremath{\nabla}} % NABLA
+
+#+LaTeX_HEADER: \newunicodechar{−}{\ensuremath{-}} % PLUS-MINUS SIGN
+#+LaTeX_HEADER: \newunicodechar{⇄}{\ensuremath{\leftrightarrow}} % RIGHT ARROW OVER LEFT ARROW
