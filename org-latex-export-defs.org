@@ -50,7 +50,7 @@
 #+LaTeX_HEADER: \newunicodechar{ℝ}{\ensuremath{\mathbb{R}}}
 
 
-#+LaTeX_HEADER: %% Miscshit
+#+LaTeX_HEADER: %% Miscellaneous
 
 #+LaTeX_HEADER: \newunicodechar{₍}{\ensuremath{_{(}}} % SUBSCRIPT LEFT PARENTHESIS
 #+LaTeX_HEADER: \newunicodechar{₎}{\ensuremath{_{)}}} % SUBSCRIPT RIGHT PARENTHESIS
@@ -60,6 +60,9 @@
 
 #+LaTeX_HEADER: \newunicodechar{−}{\ensuremath{-}} % PLUS-MINUS SIGN
 #+LaTeX_HEADER: \newunicodechar{⇄}{\ensuremath{\leftrightarrow}} % RIGHT ARROW OVER LEFT ARROW
+
+
+#+LaTeX_HEADER: %% Shit
 
 #+LaTeX_HEADER: \newunicodechar{👉}{\ensuremath{\Rrightarrow}}
 #+LaTeX_HEADER: \newunicodechar{👍}{OK}
