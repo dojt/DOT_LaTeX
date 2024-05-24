@@ -60,3 +60,8 @@
 
 #+LaTeX_HEADER: \newunicodechar{−}{\ensuremath{-}} % PLUS-MINUS SIGN
 #+LaTeX_HEADER: \newunicodechar{⇄}{\ensuremath{\leftrightarrow}} % RIGHT ARROW OVER LEFT ARROW
+
+#+LaTeX_HEADER: \newunicodechar{👉}{\ensuremath{\Rrightarrow}}
+#+LaTeX_HEADER: \newunicodechar{👍}{OK}
+#+LaTeX_HEADER: \newunicodechar{↘}{HERE}
+#+LaTeX_HEADER: \DeclareUnicodeCharacter{FE0F}{}
