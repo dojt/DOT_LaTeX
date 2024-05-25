@@ -66,5 +66,7 @@
 
 #+LaTeX_HEADER: \newunicodechar{👉}{\ensuremath{\Rrightarrow}}
 #+LaTeX_HEADER: \newunicodechar{👍}{OK}
+#+LaTeX_HEADER: \newunicodechar{│}{\ensuremath{\vert}} % BOX DRAWINGS LIGHT VERTICAL
 #+LaTeX_HEADER: \newunicodechar{↘}{HERE}
 #+LaTeX_HEADER: \DeclareUnicodeCharacter{FE0F}{}
+
