@@ -23,6 +23,9 @@
 #+LaTeX_HEADER: \newunicodechar{𝝅}{\ensuremath{\boldsymbol\pi}} % MATHEMATICAL BOLD ITALIC SMALL ...
 
 
+#+LaTeX_HEADER: \newunicodechar{𝛔}{\ensuremath{\mathbf{\sigma}}}         % MATHEMATICAL BOLD SMALL SIGMA
+
+
 #+LaTeX_HEADER: %% Other letters
 #+LaTeX_HEADER: \newunicodechar{𝓁}{\ensuremath{\ell}} % MATHEMATICAL SCRIPT SMALL L
 #+LaTeX_HEADER: \newunicodechar{𝕽}{\ensuremath{\mathfrak{R}}} % MATHEMATICAL BOLD FRAKTUR CAPITAL R
@@ -61,8 +64,17 @@
 #+LaTeX_HEADER: \newunicodechar{−}{\ensuremath{-}} % PLUS-MINUS SIGN
 #+LaTeX_HEADER: \newunicodechar{⇄}{\ensuremath{\leftrightarrow}} % RIGHT ARROW OVER LEFT ARROW
 
+#+LaTeX_HEADER: \newunicodechar{∧}{\ensuremath{\wedge}}  % LOGICAL AND
+#+LaTeX_HEADER: \newunicodechar{∨}{\ensuremath{\vee}}    % LOGICAL OR
+#+LaTeX_HEADER: \newunicodechar{⋅}{\ensuremath{\cdot}}   % DOT OPERATOR
+#+LaTeX_HEADER: \newunicodechar{➛}{\ensuremath{\to}}     % DRAFTING POINT RIGHT ARROW
+#+LaTeX_HEADER: \newunicodechar{∈}{\ensuremath{\in}}     % ELEMENT OF
+
+
 
 #+LaTeX_HEADER: %% Shit
+
+#+LaTeX_HEADER: \newunicodechar{┐}{\ensuremath{\;}}   % BOX DRAWINGS LIGHT DOWN AND LEFT
 
 #+LaTeX_HEADER: \newunicodechar{👉}{\ensuremath{\Rrightarrow}}
 #+LaTeX_HEADER: \newunicodechar{👍}{OK}
